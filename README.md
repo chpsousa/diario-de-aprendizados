@@ -13,8 +13,10 @@
 
 ## Conteúdos
 
+- Code Review
 - DevOps
     - [Pipeline do Azure DevOps com repositorio GitHub](#pipeline-do-azure-devops-com-repositorio-github)
+    - [Badge do Azure Pipelines em repositório do GitHub](#badge-do-azure-pipelines-em-repositório-do-github)
 - Padrões de projeto e Código Limpo
     - [Regra do Escoteiro](#regra-do-escoteiro)
 - Testes automatizados
@@ -29,7 +31,7 @@
 >**Deixe o código mais limpo do que estava antes de você mexer nele**
 
 A **regra do escoteiro** diz que um escoteiro sempre deve deixar o acampamento mais limpo do que encontrou.
-Em uma conversa com [@vpteruel](https://github.com/vpteruel) e [@mvmjacobs](https://github.com/mvmjacobs), o [@mvmjacobs](https://github.com/mvmjacobs) comentou sobre a Regra do Escoteiro, no desenvolvimento. Desenvolvedores devem aplicar a regra no seu trabalho, onde *todo código em que mexer, deve deixá-lo mais limpo do que encontrou*.
+Em uma conversa com [@vpteruel](https://github.com/vpteruel) e [@mvmjacobs](https://github.com/mvmjacobs), o [@mvmjacobs](https://github.com/mvmjacobs) comentou sobre a Regra do Escoteiro, no desenvolvimento. Desenvolvedores devem aplicar a regra no seu trabalho, onde **todo código em que mexer, deve deixá-lo mais limpo do que encontrou**.
 
 Encontrei um [texto](https://becode.com.br/clean-code/#:~:text=Regra%20de%20Escoteiro&text=Para%20desenvolvedores%2C%20podemos%20adaptar%20para,n%C3%A3o%20impactar%20as%20funcionalidades%20existentes.) interessante no blog Be code que fala sobre isso
 
@@ -69,3 +71,20 @@ Em .NET, usando a biblioteca [FakeItEasy](https://fakeiteasy.github.io/) é poss
 Com isso, se criarmos uma interface com assinaturas dos métodos que são utilizados para obter os valores, podemos criar um serviço verdadeiro para realizar as chamadas da API e um falso implementando a interface criada, e nos testes da aplicação podemos criar uma instância fake, para testar a chamada.
 
 Também em .NET, podemos usar a biblioteca [MockHttp for HttpClient](https://github.com/richardszalay/mockhttp) e podemos criar um servidor http falso, podendo ser utilizado nos testes.
+
+### 04/06/2020
+
+#### Badge do Azure Pipelines em repositório do GitHub
+
+Em repositórios do _GitHub_ que tiverem seus pipelines configurados no _Azure DevOps_ é possível colocar o badge do Azure Pipelines para sinalizar o _status_ de suas _builds_.
+
+![Exemplo de um badge do Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/pipelines/media/azure-pipelines-succeeded.png?view=azure-devops)
+
+Para colocar o _badge_ siga os passos:
+    - clique no pipeline que deseja
+    - clique na opção "..."
+    - clique no menu _status badge_
+    - copie o valor informado
+    - cole no seu README.md
+
+[Artigo de referência](https://docs.microsoft.com/en-us/azure/devops/pipelines/media/azure-pipelines-succeeded.png?view=azure-devops)
