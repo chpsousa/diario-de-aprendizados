@@ -26,8 +26,8 @@
 
 >**Deixe o código mais limpo do que estava antes de você mexer nele**
 
-A regra do escoteiro diz que um escoteiro sempre deve deixar o acampamento mais limpo do que encontrou.
-Em uma conversa com amigos, um deles comentou sobre a Regra do Escoteiro, no desenvolvimento. Desenvolvedores devem aplicar a regra no seu trabalho, onde todo código em que mexer, deve deixá-lo mais limpo do que encontrou.
+A **regra do escoteiro** diz que um escoteiro sempre deve deixar o acampamento mais limpo do que encontrou.
+Em uma conversa com [@vpteruel](https://github.com/vpteruel) e [@mvmjacobs](https://github.com/mvmjacobs), o [@mvmjacobs](https://github.com/mvmjacobs) comentou sobre a Regra do Escoteiro, no desenvolvimento. Desenvolvedores devem aplicar a regra no seu trabalho, onde todo código em que mexer, deve deixá-lo mais limpo do que encontrou.
 
 Encontrei um [texto](https://becode.com.br/clean-code/#:~:text=Regra%20de%20Escoteiro&text=Para%20desenvolvedores%2C%20podemos%20adaptar%20para,n%C3%A3o%20impactar%20as%20funcionalidades%20existentes.) interessante no blog Be code que fala sobre isso
 
