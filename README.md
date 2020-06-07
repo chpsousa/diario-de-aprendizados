@@ -11,14 +11,14 @@
 
 [Clique aqui](#diário-de-aprendizados) para visualizar os conteúdos separados por dia.
 
-## Conteúdos
+# Conteúdos
 
 - DevOps
     - [Pipeline do Azure DevOps com repositorio GitHub](#pipeline-do-azure-devops-com-repositorio-github)
 - Padrões de projeto e Código Limpo
     - [Regra do Escoteiro](#regra-do-escoteiro)
 
-## Diário de aprendizados
+# Diário de aprendizados
 
 ## 01/06/2020
     
