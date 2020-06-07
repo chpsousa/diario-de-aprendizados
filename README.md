@@ -20,18 +20,21 @@
 
 ## Diário de aprendizados
 
-- 01/06/2020
-    - Regra do escoteiro
+## 01/06/2020
+    
+    ### Regra do escoteiro
 
     >**Deixe o código mais limpo do que estava antes de você mexer nele**
-    
+
+
     A regra do escoteiro diz que um escoteiro sempre deve deixar o acampamento mais limpo do que encontrou.
     Em uma conversa com amigos, um deles comentou sobre a Regra do Escoteiro, no desenvolvimento. Desenvolvedores devem aplicar a regra no seu trabalho, onde todo código em que mexer, deve deixá-lo mais limpo do que encontrou.
     
     Encontrei um [texto](https://becode.com.br/clean-code/#:~:text=Regra%20de%20Escoteiro&text=Para%20desenvolvedores%2C%20podemos%20adaptar%20para,n%C3%A3o%20impactar%20as%20funcionalidades%20existentes.) interessante no blog Be code que fala sobre isso
 
-- 02/06/2020
-    - Pipeline do Azure DevOps com repositorio GitHub
+## 02/06/2020
+
+    ### Pipeline do Azure DevOps com repositorio GitHub
 
     É possível realizar uma integração de seus repositórios do _GitHub_ e criar pipelines no _Azure DevOps_ que sejam ativados a partir de _pull requests_ criados no GitHub.
 
