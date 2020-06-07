@@ -12,9 +12,9 @@
 ## Conteúdos
 
 - DevOps
-    - [Pipeline do Azure DevOps com repositorio GitHub](#pipeline-do-azure-devops-com-repositorio-github)
+    - [Pipeline do Azure DevOps com repositorio GitHub](#-pipeline-do-azure-devops-com-repositorio-github)
 - Padrões de projeto e Código Limpo
-    - [Regra do Escoteiro](#regra-do-escoteiro)
+    - [Regra do Escoteiro](#-regra-do-escoteiro)
 
 ## Diário de aprendizados
 
