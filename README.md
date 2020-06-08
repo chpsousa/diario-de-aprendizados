@@ -13,10 +13,13 @@
 
 ## Conteúdos
 
+- .NET Core
+    - [Adicionar Health Checks em uma API](#adicionar-health-checks-em-uma-api)
 - Code Review
 - DevOps
     - [Pipeline do Azure DevOps com repositorio GitHub](#pipeline-do-azure-devops-com-repositorio-github)
     - [Badge do Azure Pipelines em repositório do GitHub](#badge-do-azure-pipelines-em-repositório-do-github)
+    - [Gerar artefato para pipeline de release](#gerar-artefato-para-pipeline-de-release)
 - Padrões de projeto e Código Limpo
     - [Regra do Escoteiro](#regra-do-escoteiro)
 - Testes automatizados
@@ -88,3 +91,17 @@ Para colocar o _badge_ siga os passos:
     - cole no seu README.md
 
 [Artigo de referência](https://docs.microsoft.com/en-us/azure/devops/pipelines/media/azure-pipelines-succeeded.png?view=azure-devops)
+
+### 04/06/2020
+
+#### Gerar artefato para pipeline de release
+
+o pipeline de build de uma aplicação no _Azure DevOps_ deve gerar um artefato para o pipeline de release.
+Para isso, em aplicações .NET Core, existe uma task para gerar o artefato:
+
+```
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'your-artifact-name'
+```
