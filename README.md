@@ -124,3 +124,5 @@ var pessoa = new Pessoa("Carlos", "Henrique", "São Paulo", "SP", "Brasil");
 var (primeiroNome, _, cidade, _, _) = pessoa;
 Console.WriteLine($"Olá {primeiroNome} de {cidade}!");
 ```
+
+[Artigo de referência](https://docs.microsoft.com/en-us/dotnet/csharp/discards)
