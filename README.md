@@ -22,6 +22,7 @@
     - [Pipeline do Azure DevOps com repositorio GitHub](#pipeline-do-azure-devops-com-repositorio-github)
     - [Badge do Azure Pipelines em repositório do GitHub](#badge-do-azure-pipelines-em-repositório-do-github)
     - [Gerar artefato para pipeline de release](#gerar-artefato-para-pipeline-de-release)
+    - [Restore de pacotes NuGet em pipeline de deploy](#restore-de-pacotes-nuget-em-pipeline-de-deploy)
 - Padrões de projeto e Código Limpo
     - [Regra do Escoteiro](#regra-do-escoteiro)
 - Testes automatizados
@@ -126,3 +127,17 @@ Console.WriteLine($"Olá {primeiroNome} de {cidade}!");
 ```
 
 [Artigo de referência](https://docs.microsoft.com/en-us/dotnet/csharp/discards)
+
+
+#### Restore de pacotes NuGet em pipeline de deploy
+
+Nos _pipelines_ de _build_ do _Azure DevOps_, quando seu projeto utiliza pacotes NuGet de um _feed_ externo, você pode usar uma task específica para realizar o restore:
+
+```
+ - task: NuGetCommand@2
+ inputs:
+ command: 'restore'
+ restoreSolution: '**/*.sln'
+ feedsToUse: 'select'
+ vstsFeed: 'chave-do-feed'
+```
