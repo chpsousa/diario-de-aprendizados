@@ -105,3 +105,6 @@ Para isso, em aplicações .NET Core, existe uma task para gerar o artefato:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'your-artifact-name'
 ```
+
+
+### 05/06/2020
