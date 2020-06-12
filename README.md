@@ -16,7 +16,7 @@
 - .NET Core
     - [Adicionar Health Checks em uma API](#adicionar-health-checks-em-uma-api)
 - C#
-    - [Discards (-)](#discards-_-)
+    - [Discards (-)](#discards)
 - Code Review
 - DevOps
     - [Pipeline do Azure DevOps com repositorio GitHub](#pipeline-do-azure-devops-com-repositorio-github)
@@ -112,7 +112,7 @@ Para isso, em aplicações .NET Core, existe uma task para gerar o artefato:
 
 ### 05/06/2020
 
-#### Discards (_)
+#### Discards
 
 A partir do C# 7.0 foram criados os _discards_, que são variáveis temporárias que não são usadas em seu código.
 Elas não possuem valor, e não possuem memória alocada e nem espaço de armazenamento.
