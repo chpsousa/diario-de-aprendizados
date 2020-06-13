@@ -125,6 +125,16 @@ var pessoa = new Pessoa("Carlos", "Henrique", "São Paulo", "SP", "Brasil");
 var (primeiroNome, _, cidade, _, _) = pessoa;
 Console.WriteLine($"Olá {primeiroNome} de {cidade}!");
 ```
+```
+objeto switch
+{
+    Tipo1 _ => _servicoTipo1,
+    Tipo2 _ => _servicoTipo2,
+    Tipo3 _ => _servicoTipo3,
+    _ => throw new InvalidOperationException(
+        $"Tipo inválido")
+};
+```
 
 [Artigo de referência](https://docs.microsoft.com/en-us/dotnet/csharp/discards)
 
