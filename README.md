@@ -151,3 +151,30 @@ Nos _pipelines_ de _build_ do _Azure DevOps_, quando seu projeto utiliza pacotes
  feedsToUse: 'select'
  vstsFeed: 'chave-do-feed'
 ```
+
+### 07/06/2020
+
+#### Adicionar Health Checks em uma API
+
+Em um projeto _web_ em .NET Core é possível adicionar um endpoint para _Health Checks_ padrão.
+Para isso, basta adicionar o seguinte código na sua classe _Startup_, no método _ConfigureServices_:
+
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddHealthChecks();
+}
+```
+
+E no método _Configure_:
+
+```
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    app.UseHealthChecks("/health");
+}
+```
+
+Após isso, você pode implementar testes de API apontando para o endpoint criado.
+
+
