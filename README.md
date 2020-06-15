@@ -93,6 +93,8 @@ Para colocar o _badge_ siga os passos:
     - copie o valor informado
     - cole no seu README.md
 
+**Um detalhe importante, é que seu projeto no _Azure DevOps_ deve estar público para que o badge funcione.**
+
 [Artigo de referência](https://docs.microsoft.com/en-us/azure/devops/pipelines/media/azure-pipelines-succeeded.png?view=azure-devops)
 
 ### 04/06/2020
