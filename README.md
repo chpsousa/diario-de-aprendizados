@@ -26,7 +26,7 @@
 - Padrões de projeto e Código Limpo
     - [Regra do Escoteiro](#regra-do-escoteiro)
 - Testes automatizados
-    - [Testes com dependências externas]()
+    - [Testes com dependências externas](#testes-com-dependências-externas)
 
 ## Conteúdos separados por dia
 
@@ -76,7 +76,7 @@ O que podemos fazer então para resolver isso?
 Em .NET, usando a biblioteca [FakeItEasy](https://fakeiteasy.github.io/) é possível criar instâncias _fakes_ das classes facilmente.
 Com isso, se criarmos uma interface com assinaturas dos métodos que são utilizados para obter os valores, podemos criar um serviço verdadeiro para realizar as chamadas da API e um falso implementando a interface criada, e nos testes da aplicação podemos criar uma instância fake, para testar a chamada.
 
-Também em .NET, podemos usar a biblioteca [MockHttp for HttpClient](https://github.com/richardszalay/mockhttp) e podemos criar um servidor http falso, podendo ser utilizado nos testes.
+Também em .NET, podemos usar a biblioteca [MockHttp for HttpClient](https://github.com/richardszalay/mockhttp) ou a [Wiremock.NET](https://github.com/WireMock-Net/WireMock.Net) e podemos criar um servidor http falso, podendo ser utilizado nos testes.
 
 ### 04/06/2020
 
