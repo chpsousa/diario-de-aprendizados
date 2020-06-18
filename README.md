@@ -23,6 +23,8 @@
     - [Badge do Azure Pipelines em repositório do GitHub](#badge-do-azure-pipelines-em-repositório-do-github)
     - [Gerar artefato para pipeline de release](#gerar-artefato-para-pipeline-de-release)
     - [Restore de pacotes NuGet em pipeline de deploy](#restore-de-pacotes-nuget-em-pipeline-de-deploy)
+- Métodos Ágeis
+    - [Badge do Azure boards no Github](#badge-do-azure-boards-no-github)
 - Padrões de projeto e Código Limpo
     - [Regra do Escoteiro](#regra-do-escoteiro)
 - Testes automatizados
@@ -179,4 +181,19 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 Após isso, você pode implementar testes de API apontando para o endpoint criado.
 
+### 07/06/2020
 
+#### Badge do Azure boards no Github
+
+Em repositórios do _GitHub_ que tiverem _boards_ sendo gerenciados no _Azure DevOps_ é possível colocar o badge do Azure Boards para sinalizar o _status_ do seu _backlog_.
+
+![Exemplo de um badge do Azure Boards](https://1drv.ms/u/s!ArSgWgRrxibHgYcFUu9UcAS6LVEgaQ?e=9PgnSf)
+
+Para colocar o _badge_ siga os passos:
+    - clique no _board_ do seu projeto
+    - clique na opção da engrenagem
+    - na seção _boards_, clique no menu _status badge_
+    - copie o valor informado
+    - cole no seu README.md
+
+**Um detalhe importante, é que seu projeto no _Azure DevOps_ deve estar público para que o badge funcione.**
